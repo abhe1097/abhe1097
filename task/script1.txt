@@ -1,0 +1,18 @@
+#!/bin/bash
+
+data="aman,25,delhi
+ram,22,kanpur
+mohan,24,noida
+suman,21,mumbai
+sanaya,26,agra"
+
+# Specify the person to extract (e.g., 'mohan')
+person_to_find="mohan"
+
+# Extract and print name and age for the specific person
+echo "$data" | while IFS=',' read -r name age city; do
+    if [ "$name" = "$person_to_find" ]; then
+        echo "Name: $name, Age: $age"
+        break
+    fi
+done

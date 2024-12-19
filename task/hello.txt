@@ -1,0 +1,5 @@
+aman,25,delhi
+ram,22,kanpur
+mohan,24,noida
+suman,21,mumbai
+sanaya,26,agra
